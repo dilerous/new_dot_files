@@ -100,6 +100,7 @@ augroup configgroup
     autocmd FileType python setlocal commentstring=#\ %s
     autocmd FileType python setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'^\s*#'
     autocmd BufEnter *.zsh-theme setlocal filetype=zsh
+    autocmd BufEnter *.tmpl setlocal filetype=yaml
     autocmd BufEnter Makefile setlocal noexpandtab
     autocmd BufEnter *.sh setlocal tabstop=2
     autocmd BufEnter *.sh setlocal shiftwidth=2
